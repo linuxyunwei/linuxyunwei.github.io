@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 戴先森的学习笔记</title>
+    <link>https://linuxyunwei.com/tags/</link>
+    <description>Recent content in Tags on 戴先森的学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>daixijun1990@gmail.com (戴先森)</managingEditor>
+    <webMaster>daixijun1990@gmail.com (戴先森)</webMaster>
+    <lastBuildDate>Mon, 18 Nov 2019 19:12:02 +0800</lastBuildDate>
+    
+	<atom:link href="https://linuxyunwei.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://linuxyunwei.com/tags/kubernetes/</link>
+      <pubDate>Mon, 18 Nov 2019 19:12:02 +0800</pubDate>
+      <author>daixijun1990@gmail.com (戴先森)</author>
+      <guid>https://linuxyunwei.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hello</title>
+      <link>https://linuxyunwei.com/tags/hello/</link>
+      <pubDate>Thu, 26 Sep 2019 14:16:34 +0800</pubDate>
+      <author>daixijun1990@gmail.com (戴先森)</author>
+      <guid>https://linuxyunwei.com/tags/hello/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
