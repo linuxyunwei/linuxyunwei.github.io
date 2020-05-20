@@ -4,10 +4,17 @@
         <link>https://linuxyunwei.com/tags/</link>
         <description>Tags - 标签 - 戴先森的学习笔记</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>daixijun1990@gmail.com (戴先森)</managingEditor>
-            <webMaster>daixijun1990@gmail.com (戴先森)</webMaster><lastBuildDate>Mon, 18 Nov 2019 19:12:02 &#43;0800</lastBuildDate><atom:link href="https://linuxyunwei.com/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>daixijun1990@gmail.com (戴先森)</webMaster><lastBuildDate>Wed, 20 May 2020 19:17:26 &#43;0800</lastBuildDate><atom:link href="https://linuxyunwei.com/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>kubeadm</title>
+    <link>https://linuxyunwei.com/tags/kubeadm/</link>
+    <pubDate>Wed, 20 May 2020 19:17:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://linuxyunwei.com/tags/kubeadm/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>kubernetes</title>
     <link>https://linuxyunwei.com/tags/kubernetes/</link>
-    <pubDate>Mon, 18 Nov 2019 19:12:02 &#43;0800</pubDate>
+    <pubDate>Wed, 20 May 2020 19:17:26 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://linuxyunwei.com/tags/kubernetes/</guid>
     <description><![CDATA[]]></description>
