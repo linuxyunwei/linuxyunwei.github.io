@@ -6,10 +6,10 @@
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>daixijun1990@gmail.com (戴先森)</managingEditor>
             <webMaster>daixijun1990@gmail.com (戴先森)</webMaster><lastBuildDate>Wed, 20 May 2020 19:17:26 &#43;0800</lastBuildDate><atom:link href="https://linuxyunwei.com/tags/kubeadm/" rel="self" type="application/rss+xml" /><item>
     <title>使用Kubeadm更新集群</title>
-    <link>https://linuxyunwei.com/2020/05/%E4%BD%BF%E7%94%A8kubeadm%E6%9B%B4%E6%96%B0%E9%9B%86%E7%BE%A4/</link>
+    <link>https://linuxyunwei.com/%E4%BD%BF%E7%94%A8kubeadm%E6%9B%B4%E6%96%B0%E9%9B%86%E7%BE%A4/</link>
     <pubDate>Wed, 20 May 2020 19:17:26 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://linuxyunwei.com/2020/05/%E4%BD%BF%E7%94%A8kubeadm%E6%9B%B4%E6%96%B0%E9%9B%86%E7%BE%A4/</guid>
+    <guid>https://linuxyunwei.com/%E4%BD%BF%E7%94%A8kubeadm%E6%9B%B4%E6%96%B0%E9%9B%86%E7%BE%A4/</guid>
     <description><![CDATA[前面我们已经通过 kubeadm 安装了一套集群 当时安装的版本为 v1.16.3，现在版本已经更新到 1.18.x 了，所以我们需要对它进行升级 k8s 不支持跨多个大版本升级，所]]></description>
 </item></channel>
 </rss>

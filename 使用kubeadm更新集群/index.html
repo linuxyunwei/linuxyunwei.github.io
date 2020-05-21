@@ -8,7 +8,7 @@
         <title>使用Kubeadm更新集群 - 戴先森的学习笔记</title><meta name="Description" content="戴先森的学习笔记"><meta property="og:title" content="使用Kubeadm更新集群" />
 <meta property="og:description" content="前面我们已经通过 kubeadm 安装了一套集群 当时安装的版本为 v1.16.3，现在版本已经更新到 1.18.x 了，所以我们需要对它进行升级 k8s 不支持跨多个大版本升级，所" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://linuxyunwei.com/2020/05/%E4%BD%BF%E7%94%A8kubeadm%E6%9B%B4%E6%96%B0%E9%9B%86%E7%BE%A4/" />
+<meta property="og:url" content="https://linuxyunwei.com/%E4%BD%BF%E7%94%A8kubeadm%E6%9B%B4%E6%96%B0%E9%9B%86%E7%BE%A4/" />
 <meta property="article:published_time" content="2020-05-20T19:17:26+08:00" />
 <meta property="article:modified_time" content="2020-05-20T19:17:26+08:00" />
 <meta name="twitter:card" content="summary"/>
@@ -17,7 +17,7 @@
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://linuxyunwei.com/2020/05/%E4%BD%BF%E7%94%A8kubeadm%E6%9B%B4%E6%96%B0%E9%9B%86%E7%BE%A4/" /><link rel="prev" href="https://linuxyunwei.com/2019/11/kubeadm-%E5%AE%89%E8%A3%85%E5%8D%95master%E9%9B%86%E7%BE%A4/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://linuxyunwei.com/%E4%BD%BF%E7%94%A8kubeadm%E6%9B%B4%E6%96%B0%E9%9B%86%E7%BE%A4/" /><link rel="prev" href="https://linuxyunwei.com/kubeadm-%E5%AE%89%E8%A3%85%E5%8D%95master%E9%9B%86%E7%BE%A4/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -25,14 +25,14 @@
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/linuxyunwei.com\/2020\/05\/%E4%BD%BF%E7%94%A8kubeadm%E6%9B%B4%E6%96%B0%E9%9B%86%E7%BE%A4\/"
+            "@id": "https:\/\/linuxyunwei.com\/%E4%BD%BF%E7%94%A8kubeadm%E6%9B%B4%E6%96%B0%E9%9B%86%E7%BE%A4\/"
         },"image": {
                 "@type": "ImageObject",
                 "url": "https:\/\/linuxyunwei.com\/cover.png",
                 "width":  800 ,
                 "height":  600 
             },"genre": "posts","keywords": "kubernetes, kubeadm","wordcount":  2922 ,
-        "url": "https:\/\/linuxyunwei.com\/2020\/05\/%E4%BD%BF%E7%94%A8kubeadm%E6%9B%B4%E6%96%B0%E9%9B%86%E7%BE%A4\/","datePublished": "2020-05-20T19:17:26+08:00","dateModified": "2020-05-20T19:17:26+08:00","publisher": {
+        "url": "https:\/\/linuxyunwei.com\/%E4%BD%BF%E7%94%A8kubeadm%E6%9B%B4%E6%96%B0%E9%9B%86%E7%BE%A4\/","datePublished": "2020-05-20T19:17:26+08:00","dateModified": "2020-05-20T19:17:26+08:00","publisher": {
                 "@type": "Organization",
                 "name": "xxxx",
                 "logo": {
@@ -158,7 +158,7 @@
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>前面我们已经通过 <a href="/2019/11/kubeadm-%e5%ae%89%e8%a3%85%e5%8d%95master%e9%9b%86%e7%be%a4/" rel="">kubeadm 安装了一套集群</a></p>
+            </div><div class="content" id="content"><p>前面我们已经通过 <a href="/kubeadm-%e5%ae%89%e8%a3%85%e5%8d%95master%e9%9b%86%e7%be%a4/" rel="">kubeadm 安装了一套集群</a></p>
 <p>当时安装的版本为 v1.16.3，现在版本已经更新到 1.18.x 了，所以我们需要对它进行升级</p>
 <blockquote>
 <p>k8s 不支持跨多个大版本升级，所以我们如果想要升级到 1.18.x，就得先升级到 1.17.x 版本</p>
@@ -1019,7 +1019,7 @@ pod <span class="s2">&#34;curl&#34;</span> deleted
         </section>
     </div>
 
-    <div class="post-nav"><a href="/2019/11/kubeadm-%E5%AE%89%E8%A3%85%E5%8D%95master%E9%9B%86%E7%BE%A4/" class="prev" rel="prev" title="kubeadm 安装单master集群"><i class="fas fa-angle-left fa-fw"></i>kubeadm 安装单master集群</a></div>
+    <div class="post-nav"><a href="/kubeadm-%E5%AE%89%E8%A3%85%E5%8D%95master%E9%9B%86%E7%BE%A4/" class="prev" rel="prev" title="kubeadm 安装单master集群"><i class="fas fa-angle-left fa-fw"></i>kubeadm 安装单master集群</a></div>
 </div>
 <div id="comments"><div id="gitalk" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
