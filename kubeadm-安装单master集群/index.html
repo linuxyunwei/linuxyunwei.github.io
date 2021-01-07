@@ -31,7 +31,7 @@
                 "url": "https:\/\/linuxyunwei.com\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "posts","keywords": "kubernetes","wordcount":  8392 ,
+            },"genre": "posts","keywords": "kubernetes","wordcount":  8487 ,
         "url": "https:\/\/linuxyunwei.com\/kubeadm-%E5%AE%89%E8%A3%85%E5%8D%95master%E9%9B%86%E7%BE%A4\/","datePublished": "2019-11-18T19:12:02+08:00","dateModified": "2019-11-18T19:12:02+08:00","publisher": {
                 "@type": "Organization",
                 "name": "xxxx",
@@ -115,7 +115,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">kubeadm 安装单master集群</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>戴先森</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/kubernetes/"><i class="far fa-folder fa-fw"></i>kubernetes</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2019-11-18">2019-11-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 8392 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2019-11-18">2019-11-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 8487 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 17 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -137,6 +137,7 @@
         <li><a href="#设置主机名">设置主机名</a></li>
         <li><a href="#更新系统">更新系统</a></li>
         <li><a href="#更新内核">更新内核</a></li>
+        <li><a href="#配置网卡驱动可选">配置网卡驱动(可选)</a></li>
         <li><a href="#重启后验证内核版本">重启后验证内核版本</a></li>
         <li><a href="#禁用-selinux">禁用 SELinux</a></li>
         <li><a href="#禁用-swap">禁用 swap</a></li>
@@ -430,9 +431,29 @@ Found initrd image: /boot/initramfs-0-rescue-4097349c950a4862a8fab2587d598af7.im
 <span class="k">done</span>
 </code></pre></td></tr></table>
 </div>
-</div><blockquote>
-<p>实验环境中由于使用的是普通 PC， 所以还需要安装网卡驱动 <code>kmod-r8168</code>, <code>kmod-r8169</code></p>
+</div><h3 id="配置网卡驱动可选">配置网卡驱动(可选)</h3>
+<blockquote>
+<p>实验环境中由于使用的是普通 PC，板载网卡为 realtek r8168/r8169, 这个网卡在 5.x 版本内核中由于缺少加载 realtek.ko 模块会造成无法正常识别到网卡的情况</p>
 </blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ mkinitrd --force --preload realtek /boot/initramfs-<span class="sb">`</span>uname -r<span class="sb">`</span>.img <span class="sb">`</span>uname -r<span class="sb">`</span>
+$ lsinitrd /boot/initramfs-<span class="sb">`</span>uname -r<span class="sb">`</span>.img <span class="p">|</span> grep realtek
+Arguments: -f --add-drivers <span class="s1">&#39; realtek&#39;</span>
+...
+-rwxr--r--   <span class="m">1</span> root     root       <span class="m">127880</span> Jan  <span class="m">7</span> 16:21 usr/lib/modules/5.6.13-1.el7.elrepo.x86_64/kernel/drivers/net/ethernet/realtek/r8169.ko
+-rwxr--r--   <span class="m">1</span> root     root        <span class="m">27360</span> Jan  <span class="m">7</span> 16:21 usr/lib/modules/5.6.13-1.el7.elrepo.x86_64/kernel/drivers/net/phy/realtek.ko
+</code></pre></td></tr></table>
+</div>
+</div><p>确保有加载 <code>realtek.ko</code> 和 <code>r8169.ko</code> 模块</p>
 <h3 id="重启后验证内核版本">重启后验证内核版本</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -3037,7 +3058,7 @@ Commercial support is available at
             </noscript></div></article></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202011734"><img src="//p.ssl.qhmsg.com/t01d8eda6e551cf2615.png"/>沪公网安备 31011202011734号</p></a></div><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.70.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.9"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">戴先森</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">戴先森</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
                     <span class="icp">沪ICP备13017200号</span></div>
         </div>
     </footer></div>
