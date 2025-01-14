@@ -8,23 +8,23 @@
     <language>zh-CN</language>
     <copyright>戴先森 · CC BY-NC 4.0 沪ICP备13017200号-1 沪公网安备31011702890206号
 </copyright>
-    <lastBuildDate>Wed, 20 May 2020 19:17:26 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2025 14:38:57 +0800</lastBuildDate>
     <atom:link href="https://linuxyunwei.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用Kubeadm更新集群</title>
-      <link>https://linuxyunwei.com/posts/kubeadm%E6%9B%B4%E6%96%B0%E9%9B%86%E7%BE%A4/</link>
+      <link>https://linuxyunwei.com/2020/05/20/%E4%BD%BF%E7%94%A8kubeadm%E6%9B%B4%E6%96%B0%E9%9B%86%E7%BE%A4/</link>
       <pubDate>Wed, 20 May 2020 19:17:26 +0800</pubDate>
-      <guid>https://linuxyunwei.com/posts/kubeadm%E6%9B%B4%E6%96%B0%E9%9B%86%E7%BE%A4/</guid>
-      <description>&lt;p&gt;前面我们已经通过 &lt;a href=&#34;https://linuxyunwei.com/2019/11/kubeadm-%E5%AE%89%E8%A3%85%E5%8D%95master%E9%9B%86%E7%BE%A4/&#34;&gt;kubeadm 安装了一套集群&lt;/a&gt;&lt;/p&gt;
+      <guid>https://linuxyunwei.com/2020/05/20/%E4%BD%BF%E7%94%A8kubeadm%E6%9B%B4%E6%96%B0%E9%9B%86%E7%BE%A4/</guid>
+      <description>&lt;p&gt;前面我们已经通过 &lt;a href=&#34;https://linuxyunwei.com/posts/kubeadm-%E5%AE%89%E8%A3%85%E5%8D%95master%E9%9B%86%E7%BE%A4/&#34;&gt;kubeadm 安装了一套集群&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;当时安装的版本为 v1.16.3，现在版本已经更新到 1.18.x 了，所以我们需要对它进行升级&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;k8s 不支持跨多个大版本升级，所以我们如果想要升级到 1.18.x，就得先升级到 1.17.x 版本&lt;/p&gt;</description>
     </item>
     <item>
       <title>kubeadm 安装单master集群</title>
-      <link>https://linuxyunwei.com/posts/kubeadm-%E5%AE%89%E8%A3%85%E5%8D%95master%E9%9B%86%E7%BE%A4/</link>
+      <link>https://linuxyunwei.com/2019/11/18/kubeadm-%E5%AE%89%E8%A3%85%E5%8D%95master%E9%9B%86%E7%BE%A4/</link>
       <pubDate>Mon, 18 Nov 2019 19:12:02 +0800</pubDate>
-      <guid>https://linuxyunwei.com/posts/kubeadm-%E5%AE%89%E8%A3%85%E5%8D%95master%E9%9B%86%E7%BE%A4/</guid>
+      <guid>https://linuxyunwei.com/2019/11/18/kubeadm-%E5%AE%89%E8%A3%85%E5%8D%95master%E9%9B%86%E7%BE%A4/</guid>
       <description>&lt;h2 id=&#34;环境准备&#34;&gt;环境准备&lt;/h2&gt;
 &lt;h3 id=&#34;系统及软件版本&#34;&gt;系统及软件版本&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -154,7 +154,7 @@
       <link>https://linuxyunwei.com/hello/</link>
       <pubDate>Thu, 26 Sep 2019 14:16:34 +0800</pubDate>
       <guid>https://linuxyunwei.com/hello/</guid>
-      <description>&lt;p&gt;Hello,World&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hello World&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

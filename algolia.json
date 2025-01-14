@@ -20,6 +20,7 @@
         "description": "",
         "draft": false,
         "tags": [
+            "kubeadm",
             "kubernetes"
         ],
         "categories": [
@@ -35,8 +36,8 @@
         "description": "",
         "draft": false,
         "tags": [
-            "kubernetes",
-            "kubeadm"
+            "kubeadm",
+            "kubernetes"
         ],
         "categories": [
             "kubernetes"
