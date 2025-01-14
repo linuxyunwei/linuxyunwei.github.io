@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Kubeadm on 戴先森的学习笔记</title>
+    <link>https://linuxyunwei.com/tags/kubeadm/</link>
+    <description>Recent content in Kubeadm on 戴先森的学习笔记</description>
+    <generator>Hugo -- 0.140.2</generator>
+    <language>zh-CN</language>
+    <copyright>戴先森 · CC BY-NC 4.0 沪ICP备13017200号-1 沪公网安备31011702890206号
+</copyright>
+    <lastBuildDate>Wed, 20 May 2020 19:17:26 +0800</lastBuildDate>
+    <atom:link href="https://linuxyunwei.com/tags/kubeadm/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用Kubeadm更新集群</title>
+      <link>https://linuxyunwei.com/posts/kubeadm%E6%9B%B4%E6%96%B0%E9%9B%86%E7%BE%A4/</link>
+      <pubDate>Wed, 20 May 2020 19:17:26 +0800</pubDate>
+      <guid>https://linuxyunwei.com/posts/kubeadm%E6%9B%B4%E6%96%B0%E9%9B%86%E7%BE%A4/</guid>
+      <description>&lt;p&gt;前面我们已经通过 &lt;a href=&#34;https://linuxyunwei.com/2019/11/kubeadm-%E5%AE%89%E8%A3%85%E5%8D%95master%E9%9B%86%E7%BE%A4/&#34;&gt;kubeadm 安装了一套集群&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;当时安装的版本为 v1.16.3，现在版本已经更新到 1.18.x 了，所以我们需要对它进行升级&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;k8s 不支持跨多个大版本升级，所以我们如果想要升级到 1.18.x，就得先升级到 1.17.x 版本&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

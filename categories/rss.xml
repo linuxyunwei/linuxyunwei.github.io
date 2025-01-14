@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on 戴先森的学习笔记</title>
+    <link>https://linuxyunwei.com/categories/</link>
+    <description>Recent content in Categories on 戴先森的学习笔记</description>
+    <generator>Hugo -- 0.140.2</generator>
+    <language>zh-CN</language>
+    <copyright>戴先森 · CC BY-NC 4.0 沪ICP备13017200号-1 沪公网安备31011702890206号
+</copyright>
+    <lastBuildDate>Wed, 20 May 2020 19:17:26 +0800</lastBuildDate>
+    <atom:link href="https://linuxyunwei.com/categories/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes</title>
+      <link>https://linuxyunwei.com/categories/kubernetes/</link>
+      <pubDate>Wed, 20 May 2020 19:17:26 +0800</pubDate>
+      <guid>https://linuxyunwei.com/categories/kubernetes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hello</title>
+      <link>https://linuxyunwei.com/categories/hello/</link>
+      <pubDate>Thu, 26 Sep 2019 14:16:34 +0800</pubDate>
+      <guid>https://linuxyunwei.com/categories/hello/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
