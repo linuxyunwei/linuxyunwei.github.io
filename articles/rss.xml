@@ -8,8 +8,15 @@
     <language>zh-CN</language>
     <copyright>戴先森 · CC BY-NC 4.0 沪ICP备13017200号-1 沪公网安备31011702890206号
 </copyright>
-    <lastBuildDate>Wed, 20 May 2020 19:17:26 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2025 10:31:22 +0800</lastBuildDate>
     <atom:link href="https://linuxyunwei.com/articles/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在阿里云ECS中部署k3s&#43;Higress</title>
+      <link>https://linuxyunwei.com/2025/01/14/%E5%9C%A8%E9%98%BF%E9%87%8C%E4%BA%91ecs%E4%B8%AD%E9%83%A8%E7%BD%B2k3s-higress/</link>
+      <pubDate>Tue, 14 Jan 2025 00:47:00 +0800</pubDate>
+      <guid>https://linuxyunwei.com/2025/01/14/%E5%9C%A8%E9%98%BF%E9%87%8C%E4%BA%91ecs%E4%B8%AD%E9%83%A8%E7%BD%B2k3s-higress/</guid>
+      <description>&lt;p&gt;去年阿里云搞活动的时候 99/年(续费不涨价)购买了一台 2 核 2G 的 ECS 一直空放着没有使用， 最近收到短信提示要到期了。就想着用来干点啥，工作中习惯了使用 K8s 管理业务，就先考虑部署一套 k3s 环境，具体用来做什么后面再说 -_-\&lt;/p&gt;</description>
+    </item>
     <item>
       <title>使用Kubeadm更新集群</title>
       <link>https://linuxyunwei.com/2020/05/20/%E4%BD%BF%E7%94%A8kubeadm%E6%9B%B4%E6%96%B0%E9%9B%86%E7%BE%A4/</link>

@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://linuxyunwei.com/articles/</loc>
+    <lastmod>2025-01-14T10:31:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://linuxyunwei.com/</loc>
+    <lastmod>2025-01-14T14:38:57+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://linuxyunwei.com/2025/01/14/%E5%9C%A8%E9%98%BF%E9%87%8C%E4%BA%91ecs%E4%B8%AD%E9%83%A8%E7%BD%B2k3s-higress/</loc>
+    <lastmod>2025-01-14T10:31:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://linuxyunwei.com/categories/</loc>
     <lastmod>2025-01-14T14:38:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -22,17 +37,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://linuxyunwei.com/articles/</loc>
-    <lastmod>2020-05-20T19:17:26+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://linuxyunwei.com/tags/</loc>
-    <lastmod>2025-01-14T14:38:57+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://linuxyunwei.com/</loc>
     <lastmod>2025-01-14T14:38:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
